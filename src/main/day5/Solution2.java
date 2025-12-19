@@ -29,7 +29,7 @@ public class Solution2 {
                 max = range[1];
             }
             else if(range[1] > max) {
-                result += Math.abs(range[0] - range[1]) + 1 - Math.abs(range[0] - max) - 1;
+                result += Math.abs(range[0] - range[1]) - Math.abs(range[0] - max);
                 max = range[1];
             }
         }
